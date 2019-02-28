@@ -1,4 +1,4 @@
-import DefaultAvatar from './components/DafaultAvatar/DafaultAvatar.vue'
+import DefaultAvatar from 'components/DafaultAvatar/DafaultAvatar.vue'
 
 let components = [
   DefaultAvatar
