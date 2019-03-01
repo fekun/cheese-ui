@@ -4,6 +4,8 @@
     <Button type="text" disabled>不可亵渎的按钮</Button>
     <h3>分页</h3>
     <Page :total="100" :current="1" :size="10" @pageChange="pageChange" />
+    <h3>轮播图</h3>
+    <Carousel :imgs="imgs" style="{height: '200px'}"></Carousel>
   </div>
 </template>
 
@@ -12,6 +14,23 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  data () {
+    return {
+      imgs: [
+        {
+          href: 'http://cheesekun.top/img/avatar.gif',
+          src: 'http://cheesekun.top/img/avatar.gif'
+        },
+        {
+          href: 'http://cdn.aixifan.com/acfun-pc/2.5.15/img/logo.png',
+          src: 'http://cdn.aixifan.com/acfun-pc/2.5.15/img/logo.png'
+        },
+        {
+          src: 'https://cloud.githubusercontent.com/assets/7629661/20073135/4e3db2c2-a52b-11e6-85e1-661a8212045a.gif'
+        }
+      ]
+    }
   },
   methods: {
     pageChange (i) {
