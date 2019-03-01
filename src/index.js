@@ -1,7 +1,9 @@
-import DefaultAvatar from 'components/DafaultAvatar/DafaultAvatar.vue'
+import Button from 'components/Button/Button'
+import Page from 'components/Page/Page'
 
 let components = [
-  DefaultAvatar
+  Page,
+  Button
 ]
 const b = {}
 b.install = (Vue) => {
