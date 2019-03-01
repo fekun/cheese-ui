@@ -1,0 +1,52 @@
+.ch-button {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  border-color: #dcdfe6;
+  color: #606266;
+  -webkit-appearance: none;
+  text-align: center;
+  outline: none;
+  margin: 0;
+  transition: .1s;
+  font-weight: 500;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  user-select: none;
+  // bg
+  &.ch-button-text {
+    border-color: transparent;
+    color: #409EFF;
+    background: transparent;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &.ch-button-primary {
+    color: #fff;
+    background-color: #409EFF;
+    border-color: #409EFF;
+  }
+  &.ch-button-warning {}
+  &.ch-button-error {}
+
+  // size
+  &.ch-button-large {}
+  &.ch-button-small {
+    padding: 9px 15px;
+    font-size: 12px;
+    border-radius: 3px;
+  }
+  &.ch-button-mini {
+    padding: 7px 15px;
+    font-size: 12px;
+    border-radius: 3px;
+  }
+  &.is-disabled {
+    color: #c0c4cc;
+    cursor: not-allowed;
+  }
+}
